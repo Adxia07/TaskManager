@@ -14,5 +14,5 @@ namespace TaskManager.Models
         public int? ParentId { get; set; }
         public IntPtr AffinityMask { get; set; }
 
-    }//
+    }
 }

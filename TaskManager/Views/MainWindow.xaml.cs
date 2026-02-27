@@ -13,7 +13,6 @@ namespace TaskManager.Views
         {
             InitializeComponent();
 
-            // Добавляем обработчик клавиши Esc для закрытия окна
             this.PreviewKeyDown += (s, e) =>
             {
                 if (e.Key == Key.Escape)

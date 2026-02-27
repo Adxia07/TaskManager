@@ -62,7 +62,7 @@ namespace TaskManager.ViewModels
         }
     };
             ApplyAffinityCommand = new RelayCommand(_ => ApplyAffinity());
-            ShowHelpCommand = new RelayCommand(_ => ShowHelp()); // Новая команда
+            ShowHelpCommand = new RelayCommand(_ => ShowHelp());
 
             for (int i = 0; i < CoreCount; i++)
             {
@@ -83,7 +83,7 @@ namespace TaskManager.ViewModels
                 _timer.Interval = TimeSpan.FromMilliseconds(RefreshInterval);
         }
 
-        private int _refreshInterval = 20000; // 20 секунд по умолчанию
+        private int _refreshInterval = 20000;
         public int RefreshInterval
         {
             get => _refreshInterval;
@@ -166,7 +166,7 @@ namespace TaskManager.ViewModels
             }
             catch
             {
-                // процесс мог завершиться — тихо игнорируем
+                
             }
         }
 
@@ -176,7 +176,7 @@ namespace TaskManager.ViewModels
             {
                 var search = SearchText?.ToLower();
 
-                // Тяжёлая часть — в фоне
+                
                 var result = await Task.Run(() =>
                 {
                     var list = _service.GetAllProcesses();
