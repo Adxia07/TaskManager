@@ -63,6 +63,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Converters\CoreIndexConverter.cs" />
+    <Compile Include="Converters\PercentageConverter.cs" />
     <Compile Include="Services\ProcessService.cs" />
     <Compile Include="Utilities\AffinityHelper.cs" />
     <Compile Include="Utilities\RelayCommand.cs" />
